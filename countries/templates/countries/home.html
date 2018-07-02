@@ -4,11 +4,7 @@
 {%block content%}
     <h1>Hello world</h1>
     {% for country in countries %}
-        <p>{{ country.name | title}}</p>
-        <p>{{ country.code }}</p>
-        {% if country.name == 'colombia' %}
-            <p>South America</p>
-        {% endif %}
+        {% include "countries/country.html "%}
     {% endfor %}
     {{request.user}}
 {%endblock%}
