@@ -7,4 +7,7 @@
         {% include "countries/country.html "%}
     {% endfor %}
     {{request.user}}
+    <p><a href="{% url "tags"%}"> Ir a tags</a></p>
+    <p><a href="{% url "continents_home"%}"> Ir a continentes</a></p>
+    <p><a href="{% url "continents_id_detail" id=1%}"> Ir a country con id</a></p>
 {%endblock%}
